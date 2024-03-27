@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SideNavBar from './components/SideNavBar';
+import PopulationGraph from './components/PopulationGraph';
+import CryptoPrices from './components/CryptoPrices';
+import HomePage from './components/HomePage';
+import './App.css'; // Import CSS for styling
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <SideNavBar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/population" element={<PopulationGraph />} />
+            <Route path="/crypto" element={<CryptoPrices />} />
+            {/* Add more routes for other tasks if needed */}
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

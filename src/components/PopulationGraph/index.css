@@ -1,0 +1,60 @@
+/* PopulationGraph.css */
+.population-graph-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width:90%;
+    height: 100vh; /* Set the height of the container to the full viewport height */
+  }
+  
+  .population-graph-content {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .population-graph-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .recharts-cartesian-grid line {
+    stroke: #ddd;
+  }
+  
+  .recharts-legend {
+    margin-top: 20px;
+  }
+  
+  .recharts-tooltip {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .recharts-tooltip-label {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .recharts-tooltip-item {
+    color: #888;
+  }
+  
+  .recharts-x-axis,
+  .recharts-y-axis {
+    font-size: 14px;
+  }
+  
+  .recharts-y-axis .recharts-cartesian-axis-tick-value {
+    fill: #888;
+  }
+  
+  .recharts-x-axis .recharts-cartesian-axis-tick-value {
+    fill: #888;
+  }
+  

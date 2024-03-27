@@ -1,0 +1,111 @@
+/* index.css */
+
+/* Existing styles */
+
+.side-nav-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .side-nav {
+    width: 250px; /* Set a fixed width for the side navigation */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .side-nav h2 {
+    margin-bottom: 20px;
+  }
+  
+  .side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-nav li {
+    margin-bottom: 10px;
+  }
+  
+  .side-nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .side-nav li a:hover {
+    text-decoration: underline;
+  }
+  
+  .side-nav li a.active {
+    color: green; /* Change to the desired active link color */
+    font-weight: bold; /* Optionally, make the active link bold */
+  }
+  
+  .menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px; /* Add some spacing below the search bar */
+  }
+  
+  .search-bar input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 0 5px 5px 0;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #555;
+  }
+  
+  .logo {
+    width: 80px; /* Adjust the width of the logo */
+    height: 70px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some spacing below the logo */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show only on smaller screens */
+        color: red;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        top: 20px;
+        left: 20px;
+      }
+    .side-nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 250px; /* Set a fixed width for the side navigation */
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .side-nav-container.open {
+      transform: translateX(0);
+    }
+
+  }
+  
