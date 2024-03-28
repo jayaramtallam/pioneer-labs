@@ -1,19 +1,19 @@
-**Pioneer Labs
+**Pioneer Labs**
 Pioneer Labs is a web application for exploring population data and cryptocurrency prices.
 
-#Getting Started
+**Getting Started**
 To get started with Pioneer Labs, follow these steps:
 
-#Clone the repository:
+**Clone the repository:**
 git clone https://github.com/jayaramtallam/pioneer-labs.git
 
-#Install dependencies:
+**Install dependencies:**
 npm install
 
-#Start the development server:
+**Start the development server:**
 npm start
 
-#Open the application in your browser:
+**Open the application in your browser:**
 http://localhost:3000
 
 #Features
