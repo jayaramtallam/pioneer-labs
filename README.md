@@ -17,7 +17,7 @@ npm start
 http://localhost:3000
 
 # Features
-Explore population data for various regions.
+Explore population data for various years in United States.
 Track cryptocurrency prices in real-time.
 Visualize population trends with interactive graphs.
 View detailed information about each cryptocurrency.
