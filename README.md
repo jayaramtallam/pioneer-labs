@@ -1,4 +1,4 @@
-# Pioneer Labs
+# Pioneer Labs Assessment
 Pioneer Labs is a web application for exploring population data and cryptocurrency prices.
 
 # Getting Started
@@ -36,6 +36,8 @@ Fork the repository and create a new branch for your contribution.
 Make your changes and ensure that they adhere to the project's coding standards.
 Submit a pull request detailing your changes and any relevant information.
 
+# Published Url
+https://main--lovely-marshmallow-78acad.netlify.app/
 # License
 Pioneer Labs is licensed under the MIT License. See the LICENSE file for details.
 
